@@ -1,0 +1,49 @@
+/* Variables */
+:root{
+    --primary-color: white;
+    --secondary-color: #04B4E0;
+    --background-color: #F2F7F9;
+    --transparent-color: transparent;
+    --icon-color:#B5B6B7;
+    --title-color: #222222;
+    --subtitle-color: #888;
+    --text-color: #555;
+    --border-radius: 4rem;
+    --box-shadow: 0 0px 90px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Estilos Generales */
+html{ font-size: 10px; }
+
+body{
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6{ color: var(--title-color); }
+
+
+/* Estructura principal */
+.layout{
+    position: relative;
+    min-width: 1290px;
+    width: 75%;
+    min-height: 80vh;
+    height: 80vh;
+    margin: 10vh auto;
+
+    display: grid;
+    grid-template-areas: 
+        "aside content";
+
+    grid-template-columns: 30% 70%;
+
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
