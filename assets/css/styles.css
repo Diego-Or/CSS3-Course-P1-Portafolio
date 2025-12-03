@@ -51,7 +51,8 @@ h1, h2, h3, h4, h5, h6{ color: var(--title-color); }
 
     grid-template-columns: 30% 70%;
 
-    border-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
 
@@ -246,16 +247,14 @@ h1, h2, h3, h4, h5, h6{ color: var(--title-color); }
     height: 100%;
     min-height: 100%;
     background-color: var(--secondary-color);
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
     overflow: hidden;
 }
 
 .content__page{
-    height: 100%;
     min-height: 100%;
     background-color: var(--primary-color);
-    border-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
 
     display: flex;
     flex-direction: column;
@@ -281,3 +280,4 @@ h1, h2, h3, h4, h5, h6{ color: var(--title-color); }
     overflow: auto;
     display: block;
 }
+
