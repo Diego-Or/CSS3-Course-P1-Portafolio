@@ -10,6 +10,8 @@
     --text-color: #555;
     --border-radius: 3.2rem;
     --box-shadow: 0 0px 90px -5px rgba(0, 0, 0, 0.2);
+    --border-reviews: #E5E6E7;
+    --color-company:#A5A6A7;
 }
 
 
@@ -276,8 +278,112 @@ h1, h2, h3, h4, h5, h6{ color: var(--title-color); }
 .content__about{
     height: 100%;
     min-height: 100%;
-    padding: 6rem 3.2rem 6rem 6rem;
+    padding: 6rem 4.2rem 6rem 6rem;
     overflow: auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4.5rem;
 }
+
+.about__header{margin-bottom: -1rem; display: inline-block;}
+.about__title{
+    position: relative;
+    font-size: 3.2rem;
+}
+
+.about__title::after{
+    content:'';
+    position: absolute;
+    top: 20px;
+    right: -25px;
+
+    width: 50px;
+    height: 30px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--secondary-color), var(--secondary-color) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+}
+
+.title__color{
+    color: var(--secondary-color);
+    z-index: -1;
+}
+
+.about__personal-info{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.personal-info__bio{
+    flex-basis: 60%;
+}
+
+.personal-info__description{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
+
+.personal-info__data{ flex-basis: 40%; }
+.personal-info__option{ margin-bottom: 1rem; }
+
+.personal-info__title{
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
+
+
+/* SERVICIOS */
+.services__header, .reviews__header{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.services__title, .reviews__title{
+    font-size: 2.1rem;
+}
+
+.services__title::after, .reviews__title::after{
+    content:'';
+    position: absolute;
+    top: 15px;
+    right: -15px;
+
+    width: 30px;
+    height: 20px;
+    background-image: -webkit-repeating-radial-gradient(center center, var(--secondary-color), var(--secondary-color) 1px, transparent 0px, transparent 100%);
+    background-size: 6px 6px;
+    opacity: 0.5;
+}
+
+.service__icon .fa-solid{
+    color: var(--secondary-color);
+    font-size: 3.8rem;
+}
+
+.services__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem 5rem;
+}
+
+.services__service{
+    flex-basis: calc(50% - 5rem);
+}
+
+.service__title{
+    font-size: 1.8rem;
+    margin: 0.8rem 0;
+}
+
+.service__description{
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
 
