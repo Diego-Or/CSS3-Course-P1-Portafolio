@@ -387,3 +387,53 @@ h1, h2, h3, h4, h5, h6{ color: var(--title-color); }
 }
 
 
+/* RESEÑAS */
+.reviews__container{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+.reviews__review{
+    flex-basis: calc(50% - 3rem);
+    border: 2px solid var(--border-reviews);
+    border-radius: 2rem;
+    padding: 0 2.5rem 1.5rem;
+    margin-top: 3.5rem;
+}
+
+.review__image-container{
+    width: 100%;
+}
+
+.review__image{
+    max-width: 9rem;
+    max-height: 9rem;
+    border-radius: 9rem;
+    margin: 0 auto;
+    margin-top: -4.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 10px 10px -4px rgba(0, 0, 0, 0.22);
+}
+
+.review__description{ margin-bottom: 2rem; }
+
+.review__text{
+    font-size: 1.5rem;
+    line-height: 2.5rem;;
+}
+
+.review__author{
+    display: flex;
+    justify-content: space-between;
+}
+.review__company{
+    color: var(--color-company);
+    font-weight: 300;
+}
+
+.review__icon{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    opacity: 0.5;
+}
